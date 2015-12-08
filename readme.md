@@ -1,0 +1,1 @@
+Inspired by & developed upon https://gist.github.com/ircmaxell/1232629
