@@ -8,7 +8,7 @@ Example Usage
 ---
 > $exEngine = new ExpressionEvaluator\Engine;
 
-> $exEngine->evalute('5 + 3 * 2');
+> echo $exEngine->evalute('5 + 3 * 2');
 
 > // outputs 11
 
