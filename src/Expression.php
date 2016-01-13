@@ -4,6 +4,7 @@ namespace ExpressionEvaluator;
 
 use ExpressionEvaluator\Operators\Arithmetic\Addition;
 use ExpressionEvaluator\Operators\Arithmetic\Division;
+use ExpressionEvaluator\Operators\Arithmetic\Modulus;
 use ExpressionEvaluator\Operators\Arithmetic\Multiplication;
 use ExpressionEvaluator\Operators\Arithmetic\Subtraction;
 use ExpressionEvaluator\Operators\Comparison\Equal;
@@ -49,6 +50,8 @@ abstract class Expression {
                 return new Multiplication($value);
             case Division::SYMBOL:
                 return new Division($value);
+            case Modulus::SYMBOL:
+                return new Modulus($value);
             case AndOperator::SYMBOL:
                 return new AndOperator($value);
             case OrOperator::SYMBOL:
