@@ -8,7 +8,7 @@ class LessThan extends OperatorBase {
     const SYMBOL = '<';
 
     protected $precedence = 2;
-    protected $leftAssoc = false;
+    protected $leftAssoc = true;
 
     public function operate(\SplStack $stack) {
         $right = $stack->pop()->operate($stack);
